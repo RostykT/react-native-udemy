@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Pressable, Image, Platform } from 'react-native';
 import React from 'react';
 import  { useNavigation } from '@react-navigation/native';
-import MealDeails from './MealDeails';
+import MealDetails from './MealDetails';
 
 
 const MealItem = ({id, title, imageURL, duration, complexity, affordability}) => {
@@ -30,7 +30,7 @@ const MealItem = ({id, title, imageURL, duration, complexity, affordability}) =>
                 />
                 <Text style={styles.title}>{ title }</Text>
             </View>
-            <MealDeails duration={duration} complexity={complexity} affordability={affordability} />
+            <MealDetails duration={duration} complexity={complexity} affordability={affordability} />
         </Pressable>
     </View>
   )
